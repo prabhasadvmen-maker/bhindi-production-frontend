@@ -39,13 +39,13 @@ export const CinematicBanner = () => {
       </div>
 
       {/* =========================================================
-          CENTER CINEMATIC PHOTO: 100% FULL WIDTH (Balanced Compact Height)
+          CENTER CINEMATIC PHOTO: 100% Full Image Visibility (No Cut-Off)
          ========================================================= */}
       <div className="relative w-full bg-[#050904] flex items-center justify-center overflow-hidden">
         <img 
           src="/every_frame_tells_a_story.png" 
           alt="Every frame tells a story - Bhindi Production" 
-          className="w-full h-[180px] xs:h-[220px] sm:h-[260px] md:h-[300px] lg:h-[320px] object-cover object-[50%_25%] block"
+          className="w-full h-auto block object-contain"
         />
       </div>
 
