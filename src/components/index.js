@@ -1,5 +1,6 @@
 export * from './common/Navbar';
 export * from './common/Footer';
+export * from './common/CinematicBanner';
 export * from './common/SectionHeader';
 export * from './common/VideoModal';
 

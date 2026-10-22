@@ -15,7 +15,7 @@
 }
 
 .font-script {
-  font-family: 'Caveat', cursive;
+  font-family: 'Caveat', cursive !important;
 }
 
 /* Custom scrollbar */
@@ -41,4 +41,25 @@
 
 .animate-wheel {
   animation: mouseWheel 1.6s infinite ease-in-out;
+}
+
+/* Film strip continuous marquee animations */
+@keyframes sprocketScrollLeft {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes sprocketScrollRight {
+  0% { transform: translate3d(-50%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+.animate-sprocket-left {
+  animation: sprocketScrollLeft 22s linear infinite;
+  will-change: transform;
+}
+
+.animate-sprocket-right {
+  animation: sprocketScrollRight 22s linear infinite;
+  will-change: transform;
 }

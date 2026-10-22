@@ -1,7 +1,18 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { Navbar, Footer } from './components';
-import { Home, Services, OurWork, About, Contact } from './pages';
+import { 
+  Home, 
+  Services, 
+  OurWork, 
+  About, 
+  Contact,
+  FeatureCinema,
+  Commercials,
+  MusicVideos,
+  Documentaries,
+  ColorGrading
+} from './pages';
 import './App.css';
 
 // Automatically scroll to top on route change
@@ -31,6 +42,14 @@ function App() {
             <Route path="/work" element={<OurWork />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            
+            {/* Dedicated Capabilities Pages */}
+            <Route path="/capabilities/feature-cinema" element={<FeatureCinema />} />
+            <Route path="/capabilities/commercials" element={<Commercials />} />
+            <Route path="/capabilities/music-videos" element={<MusicVideos />} />
+            <Route path="/capabilities/documentaries" element={<Documentaries />} />
+            <Route path="/capabilities/color-grading" element={<ColorGrading />} />
+
             <Route path="*" element={<Home />} />
           </Routes>
         </main>

@@ -177,7 +177,7 @@ export const HeroSection = ({ onOpenShowreel }) => {
           {/* Right Column: Handwritten Calligraphy ("Film Beyond Limits") */}
           <div className="lg:col-span-4 flex flex-col items-center lg:items-end justify-center lg:justify-end pt-3 sm:pt-10 lg:pt-0">
             <div className="relative inline-block select-none transform rotate-[-4deg] sm:rotate-[-8deg] hover:rotate-0 transition-transform duration-500 text-center lg:text-right">
-              <span className="font-script text-2xl xs:text-3xl sm:text-6xl lg:text-7xl text-white font-bold tracking-wide leading-[1.08] drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)] block">
+              <span className="font-script text-3xl xs:text-4xl sm:text-6xl lg:text-7xl text-white font-bold tracking-wide leading-[1.08] drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)] block">
                 Film <span className="xs:hidden"> </span><br className="hidden xs:inline" />
                 Beyond <span className="xs:hidden"> </span><br className="hidden xs:inline" />
                 Limits
@@ -185,10 +185,10 @@ export const HeroSection = ({ onOpenShowreel }) => {
 
               {/* Hand-drawn white chalk brush stroke */}
               <svg 
-                className="w-20 xs:w-28 sm:w-44 h-3.5 sm:h-6 text-white/95 mt-1 mx-auto lg:ml-auto lg:mr-0" 
+                className="w-28 xs:w-36 sm:w-44 h-5 sm:h-6 text-white/95 mt-1 mx-auto lg:ml-auto lg:mr-0" 
                 viewBox="0 0 160 20" 
                 fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg" 
               >
                 <path 
                   d="M4 14 C45 3, 115 17, 156 6" 

@@ -6,12 +6,47 @@ import {
   Play, 
   Sliders,
   Layers,
-  Award
+  Award,
+  Clapperboard,
+  Video,
+  Target,
+  PenTool,
+  Tv,
+  ArrowRight,
+  ArrowDown
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { COMPANY_STATS } from '../services/mockData';
 import { TeamGrid } from '../components/about/TeamGrid';
 
 export const About = () => {
+  const studioPillars = [
+    {
+      title: 'Vision-First Storytelling',
+      desc: 'Narratives sculpted with human truth and emotional resonance.',
+      icon: Film,
+      badge: 'Core Vision'
+    },
+    {
+      title: '8K RED & ARRI Cinema Kits',
+      desc: 'In-house cinema bodies, Cooke Anamorphic glass, Ronin 2 rigs.',
+      icon: Camera,
+      badge: 'Tier-1 Tech'
+    },
+    {
+      title: 'DaVinci DI Color Suite',
+      desc: 'Reference-calibrated HDR mastering and Dolby Atmos audio.',
+      icon: Sliders,
+      badge: 'Post Mastery'
+    },
+    {
+      title: 'Pan-India Line Agility',
+      desc: 'Turnkey line production across 18+ states with rapid clearances.',
+      icon: Award,
+      badge: 'Turnkey'
+    }
+  ];
+
   const onSetGallery = [
     {
       type: 'video',
@@ -43,59 +78,176 @@ export const About = () => {
     <div className="bg-[#fbfaf6] text-[#1c1f24] min-h-screen">
       
       {/* =========================================
-          CREATIVE ABOUT HEADER BANNER (Olive & White Theme)
+          CREATIVE ABOUT HEADER BANNER (Crafting Stories That Matter)
          ========================================= */}
-      <section className="relative py-20 sm:py-28 bg-gradient-to-b from-[#f4f7ef] via-[#fafcf6] to-[#fbfaf6] border-b border-gray-200 overflow-hidden">
+      <section className="relative py-14 sm:py-20 bg-gradient-to-b from-[#f4f7ef] via-[#fafcf6] to-[#fbfaf6] border-b border-gray-200 overflow-hidden">
         
-        {/* Organic leaves artistic backdrop design (Matching Services) */}
-        <div className="absolute top-1/2 right-12 -translate-y-1/2 w-80 h-96 pointer-events-none hidden lg:block opacity-65">
-          <div className="relative w-full h-full">
-            <div className="absolute -top-6 -left-4 w-52 h-64 bg-[#dbe6cf] rounded-[45%_55%_70%_30%/30%_60%_40%_70%] transform rotate-[-12deg] opacity-80" />
-            <div className="absolute -bottom-8 -right-4 w-60 h-60 bg-[#6b8543] rounded-[50%_50%_40%_60%/40%_60%_50%_50%] transform rotate-[20deg] opacity-85 shadow-sm" />
-            <div className="absolute -left-6 top-1/4 w-36 h-52 bg-[#465a29] rounded-[30%_70%_70%_30%/30%_30%_70%_70%] transform rotate-[-40deg] opacity-90" />
-          </div>
-        </div>
-
-        {/* Subtle decorative leaf graphics in corners */}
-        <div className="absolute top-0 right-0 w-80 h-80 text-[#556f2d]/10 pointer-events-none">
-          <svg viewBox="0 0 100 100" fill="currentColor">
-            <path d="M10 90 Q40 50 80 40 Q50 70 10 90 Z" />
-            <path d="M15 95 Q55 60 90 60 Q60 85 15 95 Z" />
-          </svg>
-        </div>
+        {/* Subtle organic ambient glow */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#edf4e6] rounded-full blur-3xl pointer-events-none opacity-60" />
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#e7efdf] rounded-full blur-3xl pointer-events-none opacity-50" />
 
         <div className="w-full max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl space-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
             
-            {/* Tagline Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#e8f1df] border border-[#556f2d]/25 text-[#304419] text-xs font-bold tracking-widest uppercase shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-[#556f2d] animate-pulse" />
-              <span>ABOUT BHINDI PRODUCTION • OUR STORY</span>
+            {/* =========================================
+                LEFT COLUMN: Visual Montage & "Stories in Motion" (5 cols)
+               ========================================= */}
+            <div className="lg:col-span-5 relative flex items-center justify-center my-6 sm:my-8 lg:my-0 px-2 sm:px-4">
+              
+              {/* Organic Leaves & Fluid Green Backdrop */}
+              <div className="absolute inset-0 -m-6 sm:-m-8 pointer-events-none flex items-center justify-center">
+                {/* Soft light sage organic blob */}
+                <div className="absolute -top-6 -left-6 w-48 sm:w-56 h-56 sm:h-64 bg-[#d8e4cd] rounded-[45%_55%_70%_30%/30%_60%_40%_70%] transform -rotate-12 opacity-85" />
+                {/* Deep forest olive leaf silhouette on the left */}
+                <div className="absolute -left-6 top-8 w-36 sm:w-44 h-48 sm:h-56 bg-[#4c6338] rounded-[30%_70%_70%_30%/30%_30%_70%_70%] transform -rotate-45 opacity-90 shadow-sm" />
+                {/* Olive bottom shelf backing */}
+                <div className="absolute -bottom-8 left-6 w-56 sm:w-64 h-32 sm:h-40 bg-[#5d7742] rounded-[50%_50%_35%_65%/45%_55%_45%_55%] transform rotate-6 opacity-85" />
+                {/* Right accent leaf behind main photo */}
+                <div className="absolute -top-4 right-2 w-32 h-36 bg-[#789358] rounded-[60%_40%_50%_50%/40%_60%_40%_60%] transform rotate-12 opacity-75" />
+              </div>
+
+              {/* Top-Left Floating Circle Badge (Clapperboard) */}
+              <div className="absolute -top-3 -left-2 sm:-top-4 sm:-left-3 z-20 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#486237] text-[#e8f1df] flex items-center justify-center shadow-lg border-2 border-white/80 transform hover:scale-110 transition-transform">
+                <Clapperboard className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2]" />
+              </div>
+
+              {/* Top-Right Floating Circle Badge (Camera) */}
+              <div className="absolute top-2 -right-2 sm:top-3 sm:-right-3 z-20 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#486237] text-[#e8f1df] flex items-center justify-center shadow-lg border-2 border-white/80 transform hover:scale-110 transition-transform">
+                <Camera className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2]" />
+              </div>
+
+              {/* Main Picture Card: Professional Cameraman at Sunset */}
+              <div className="relative z-10 w-full max-w-[340px] xs:max-w-[380px] sm:max-w-[420px] aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-2 border-white/80 bg-[#15171d] group cursor-pointer transform hover:scale-[1.01] transition-all duration-500">
+                <img
+                  src="/about_cameraman_sunset.jpg"
+                  alt="Bhindi Production Cinematographer on location"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10 pointer-events-none" />
+              </div>
+
+              {/* Overlapping Secondary Card: On-Set Live Director Monitor */}
+              <div className="absolute -bottom-5 -right-2 sm:-bottom-7 sm:-right-4 z-20 w-36 sm:w-44 md:w-48 aspect-[16/11] rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl border-[3px] sm:border-4 border-white bg-[#101216] group cursor-pointer transform hover:scale-105 transition-all duration-300">
+                <img
+                  src="/about_monitor_onset.jpg"
+                  alt="On-Set Live Camera Monitor Screen"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                {/* Subtle REC recording indicator */}
+                <div className="absolute top-2 left-2 flex items-center gap-1.5 px-2 py-0.5 rounded bg-black/70 backdrop-blur-xs text-[9px] font-mono text-white pointer-events-none">
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+                  <span>REC</span>
+                </div>
+              </div>
+
+              {/* Bottom-Left Script Calligraphy: "Stories in Motion" */}
+              <div className="absolute -bottom-8 left-0 sm:-bottom-10 sm:-left-4 z-20 pointer-events-none transform -rotate-8">
+                <span className="font-script text-2xl sm:text-3xl md:text-4xl text-[#2e4021] font-bold tracking-wide drop-shadow-[0_2px_4px_rgba(255,255,255,0.95)] block leading-none">
+                  Stories <br />
+                  <span className="ml-3 sm:ml-4">in Motion</span>
+                </span>
+                <svg className="w-24 sm:w-32 h-4 text-[#486339] -mt-1 ml-1" viewBox="0 0 120 18" fill="none">
+                  <path d="M4 10 C35 2, 75 16, 116 5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                  <path d="M14 14 C45 8, 80 16, 105 10" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" opacity="0.65" />
+                </svg>
+              </div>
+
             </div>
 
-            {/* Main Headline */}
-            <h1 className="font-serif-display font-bold text-3xl xs:text-4xl sm:text-5xl md:text-6xl text-[#181b20] tracking-tight leading-[1.08]">
-              More Than Production. <br />
-              <span className="text-[#556f2d]">A Creative Partner.</span>
-            </h1>
+            {/* =========================================
+                CENTER COLUMN: About Us Identity & Narrative (4 cols)
+               ========================================= */}
+            <div className="lg:col-span-4 space-y-4 sm:space-y-6 lg:px-2">
+              
+              {/* Tagline: — WHO WE ARE • ABOUT US — */}
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-[#4d6639]">
+                <span className="w-4 h-[1.5px] bg-[#4d6639] inline-block" />
+                <span>ABOUT BHINDI PRODUCTION</span>
+                <span className="w-4 h-[1.5px] bg-[#4d6639] inline-block" />
+              </div>
 
-            {/* Subtitle */}
-            <p className="text-gray-600 max-w-2xl text-sm sm:text-base md:text-lg leading-relaxed">
-              Founded with a hunger for fearless cinematic storytelling, Bhindi Production has evolved into one of the country's most dynamic full-service production houses, working with leading brands, agencies, and indie visionaries.
-            </p>
+              {/* Headline */}
+              <h1 className="font-serif-display font-bold text-3xl sm:text-4xl lg:text-[2.75rem] text-[#14171a] tracking-tight leading-[1.12]">
+                Pioneering Stories, <br />
+                <span className="text-[#48633b]">Crafted with Soul.</span>
+              </h1>
 
-            {/* Badges Checklist */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3 pt-2">
-              {[
-                'Mumbai Hub & Pan-India Units',
-                'In-House Master Post-Production',
-                'Award-Winning Film Crew'
-              ].map((feat, i) => (
-                <div key={i} className="flex items-center gap-2 text-xs font-semibold text-[#293c1a] bg-white py-2 px-3 rounded-xl border border-[#556f2d]/20 shadow-sm">
-                  <CheckCircle2 className="w-4 h-4 text-[#556f2d] shrink-0" />
-                  <span>{feat}</span>
+              {/* Paragraph Description */}
+              <p className="text-gray-600 text-sm sm:text-[0.95rem] leading-relaxed">
+                Bhindi Production is an independent cinema studio and creative film production house. Founded in 2018, we bridge authentic Indian narrative depth with global cinema benchmarks across commercial films, music videos, and cultural documentaries.
+              </p>
+
+              {/* Dual Production Hub Highlights */}
+              <div className="grid grid-cols-2 gap-2.5 pt-1 text-xs">
+                <div className="p-3 rounded-xl bg-white/90 border border-[#48633b]/20 shadow-xs">
+                  <span className="font-bold text-[#14171a] block text-xs">Greater Noida West</span>
+                  <span className="text-[11px] text-[#556f2d] font-semibold">Development & Direction</span>
                 </div>
-              ))}
+                <div className="p-3 rounded-xl bg-white/90 border border-[#48633b]/20 shadow-xs">
+                  <span className="font-bold text-[#14171a] block text-xs">Mumbai Film City</span>
+                  <span className="text-[11px] text-[#556f2d] font-semibold">Sound Stage & DI Suite</span>
+                </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="pt-2 flex flex-wrap items-center gap-3">
+                <a
+                  href="#philosophy"
+                  className="inline-flex items-center gap-3 px-7 py-3 rounded-full bg-[#182619] hover:bg-[#273d27] text-white text-xs sm:text-sm font-semibold tracking-wider transition-all duration-300 transform hover:-translate-y-0.5 shadow-md hover:shadow-xl group"
+                >
+                  <span>Our Philosophy</span>
+                  <ArrowDown className="w-4 h-4 text-[#a3c772] group-hover:translate-y-0.5 transition-transform" />
+                </a>
+
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white hover:bg-gray-50 border border-gray-300 text-[#14171a] text-xs sm:text-sm font-semibold tracking-wider transition-all duration-300 shadow-xs"
+                >
+                  <span>Get In Touch</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-[#48633b]" />
+                </Link>
+              </div>
+
+            </div>
+
+            {/* =========================================
+                RIGHT COLUMN: 4 Dedicated Studio Pillars (3 cols)
+                (Distinct from Home page services list!)
+               ========================================= */}
+            <div className="lg:col-span-3 border-t lg:border-t-0 lg:border-l border-gray-200/90 pt-6 lg:pt-0 lg:pl-6 xl:pl-8 space-y-3 sm:space-y-3.5">
+              <div className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#556f2d] pb-0.5">
+                STUDIO PILLARS
+              </div>
+
+              {studioPillars.map((item, idx) => {
+                const IconComp = item.icon;
+                return (
+                  <div
+                    key={idx}
+                    className="group flex items-start gap-3 p-2.5 rounded-xl bg-white/70 hover:bg-white border border-gray-200/60 hover:border-[#556f2d]/30 transition-all duration-200 shadow-xs"
+                  >
+                    {/* Circle Icon Badge */}
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#dbe5d1] text-[#344725] group-hover:bg-[#48633b] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300 shadow-xs mt-0.5">
+                      <IconComp className="w-4 h-4 sm:w-4.5 sm:h-4.5 stroke-[1.8]" />
+                    </div>
+
+                    {/* Pillar Text Details */}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center justify-between gap-1">
+                        <h3 className="font-bold text-xs sm:text-[13px] text-[#14171a] group-hover:text-[#48633b] transition-colors leading-snug">
+                          {item.title}
+                        </h3>
+                        <span className="text-[9px] uppercase font-mono px-1.5 py-0.5 rounded bg-[#e8f1df] text-[#40562e] font-semibold shrink-0">
+                          {item.badge}
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-gray-500 mt-0.5 leading-tight">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
           </div>
@@ -105,7 +257,7 @@ export const About = () => {
       {/* =========================================
           STORY & PHILOSOPHY SECTION (With Real Production Video)
          ========================================= */}
-      <section className="py-14 sm:py-20 w-full max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="philosophy" className="py-14 sm:py-20 w-full max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left Column (7 cols): Philosophy Statement */}

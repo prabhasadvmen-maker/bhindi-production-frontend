@@ -8,6 +8,7 @@ import {
   CtaSection 
 } from '../components/home';
 import { VideoModal } from '../components/common/VideoModal';
+import { CinematicBanner } from '../components/common/CinematicBanner';
 
 export const Home = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
@@ -33,6 +34,9 @@ export const Home = () => {
 
       {/* 3. Complete Production Solutions Section */}
       <CompleteProductionSection />
+
+      {/* Cinematic Film Strip Banner ("Every frame tells a story.") - Placed above Our Latest Work */}
+      <CinematicBanner />
 
       {/* 4. Our Latest Work Section (Featured Projects & Stats) */}
       <LatestWorkSection

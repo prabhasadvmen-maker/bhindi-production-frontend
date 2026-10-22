@@ -185,6 +185,7 @@ export const TestimonialsSection = () => {
               {/* Hand-drawn white chalk brush underline */}
               <svg 
                 className="w-32 sm:w-40 h-6 text-white/95 mt-1 ml-auto" 
+
                 viewBox="0 0 160 20" 
                 fill="none" 
                 xmlns="http://www.w3.org/2000/svg"

@@ -3,3 +3,8 @@ export * from './Services';
 export * from './OurWork';
 export * from './About';
 export * from './Contact';
+export * from './capabilities/FeatureCinema';
+export * from './capabilities/Commercials';
+export * from './capabilities/MusicVideos';
+export * from './capabilities/Documentaries';
+export * from './capabilities/ColorGrading';
