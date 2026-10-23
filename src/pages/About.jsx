@@ -49,28 +49,28 @@ export const About = () => {
 
   const onSetGallery = [
     {
-      type: 'video',
-      src: '/video_fashion_capsule.mp4',
-      title: 'Fashion & Wardrobe Styling',
-      subtitle: 'Editorial Costume Direction'
+      type: 'image',
+      src: '/From Klickpin.com- Need fresh inspiration Build these smart back-to-school ideas that help you get the look without the stress with realistic idea.jpg',
+      title: 'Rajasthani Haveli Art Direction',
+      subtitle: 'Royal Palace Architecture & Set Design'
     },
     {
       type: 'image',
-      src: '/img_modern_living.jpg',
-      title: 'Contemporary Set Design',
-      subtitle: 'Interior Architecture & Staging'
+      src: '/a4usxhh_ssspin.io_1792747382.jpg',
+      title: 'Bollywood Soundstage Rigging',
+      subtitle: 'Lighting Grids & Full Crew Operations'
     },
     {
       type: 'video',
-      src: '/video_entryway.mp4',
-      title: 'Spatial Cinematography',
-      subtitle: 'Lighting & Depth Composition'
+      src: '/From Klickpin.com- 13 Unique wedding hair ideas that make everyday moments look more intentional memorable and beautifully styled for anyone who l.mp4',
+      title: 'Punjabi Music Video Direction',
+      subtitle: 'Punjab Film City Choreography & Dolly Track'
     },
     {
-      type: 'image',
-      src: '/img_beauty_hair.jpg',
-      title: 'Hair & Makeup Artistry',
-      subtitle: 'High-Definition Character Design'
+      type: 'video',
+      src: '/From Klickpin.com- From beginner to obsessed Pin these budget-friendly smoothie bowl ideas that bring style function and personality together with.mp4',
+      title: 'Royal Indian Couture Styling',
+      subtitle: 'Handcrafted Silks & Cyclorama Lighting'
     }
   ];
 
@@ -116,11 +116,11 @@ export const About = () => {
                 <Camera className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2]" />
               </div>
 
-              {/* Main Picture Card: Professional Cameraman at Sunset */}
+              {/* Main Picture Card: Professional Indian Cinematographer with ARRI Alexa */}
               <div className="relative z-10 w-full max-w-[340px] xs:max-w-[380px] sm:max-w-[420px] aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-2 border-white/80 bg-[#15171d] group cursor-pointer transform hover:scale-[1.01] transition-all duration-500">
                 <img
-                  src="/about_cameraman_sunset.jpg"
-                  alt="Bhindi Production Cinematographer on location"
+                  src="/From Klickpin.com- Try this guide to elegant hair care ideas that look high-end but stay practical with practical inspiration you can use right aw.jpg"
+                  alt="Bhindi Production Cinematographer on location in India"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10 pointer-events-none" />
@@ -184,7 +184,7 @@ export const About = () => {
                   <span className="text-[11px] text-[#556f2d] font-semibold">Development & Direction</span>
                 </div>
                 <div className="p-3 rounded-xl bg-white/90 border border-[#48633b]/20 shadow-xs">
-                  <span className="font-bold text-[#14171a] block text-xs">Mumbai Film City</span>
+                  <span className="font-bold text-[#14171a] block text-xs">Mumbai & Noida Film City</span>
                   <span className="text-[11px] text-[#556f2d] font-semibold">Sound Stage & DI Suite</span>
                 </div>
               </div>
@@ -317,7 +317,7 @@ export const About = () => {
               
               {/* Real Looping Behind-The-Scenes Production Video */}
               <video
-                src="/video_about_real.mp4"
+                src="/From Klickpin.com- 41728734041110747-pin-id-41728734041110747.mp4"
                 autoPlay
                 muted
                 loop

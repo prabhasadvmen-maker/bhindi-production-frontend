@@ -47,7 +47,7 @@ export const Commercials = () => {
       campaign: 'The Silent Revolution (45s TVC)',
       metric: '18M+ Views across TV & Digital',
       desc: 'Cinematic commercial highlighting the raw torque and sleek design of high-end electric mobility shot across Ladakh and Mumbai nightscapes.',
-      image: '/commercial_car.jpg',
+      image: '/From Klickpin.com- Dreamy street market scenes with charm and useful ideas on a budget with beautiful world vibes-pin-id-924926842228386635.jpg',
       tags: ['Automotive', 'TV Broadcast', '8K RED V-Raptor']
     },
     {
@@ -151,8 +151,8 @@ export const Commercials = () => {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden border border-gray-200 shadow-xl aspect-[16/10] bg-black group">
                 <video
-                  src="/video_commercial.mp4"
-                  poster="/commercial_car.jpg"
+                  src="/From Klickpin.com- 95 Clever Digital Product Ideas-pin-id-622481979781910754.mp4"
+                  poster="/From Klickpin.com- Try this guide to elegant hair care ideas that look high-end but stay practical with practical inspiration you can use right aw.jpg"
                   className="w-full h-full object-cover"
                   controls={isPlaying}
                   autoPlay={isPlaying}

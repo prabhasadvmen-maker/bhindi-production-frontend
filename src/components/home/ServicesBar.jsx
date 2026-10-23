@@ -81,14 +81,14 @@ export const ServicesBar = ({ onOpenVideo }) => {
               <Camera className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2]" />
             </div>
 
-            {/* Main Picture Card: Professional Cameraman at Sunset */}
+            {/* Main Picture Card: Professional Indian Cinematographer with ARRI Alexa */}
             <div 
               onClick={onOpenVideo}
               className="relative z-10 w-full max-w-[340px] xs:max-w-[380px] sm:max-w-[420px] aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-2 border-white/80 bg-[#15171d] group cursor-pointer transform hover:scale-[1.01] transition-all duration-500"
             >
               <img
-                src="/about_cameraman_sunset.jpg"
-                alt="Bhindi Production Cinematographer on location"
+                src="/images (4).jpg"
+                alt="Bhindi Production Cinematographer on Soundstage with ARRI Camera"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10 pointer-events-none" />
@@ -145,7 +145,7 @@ export const ServicesBar = ({ onOpenVideo }) => {
 
             {/* Paragraph Description */}
             <p className="text-gray-600 text-sm sm:text-[0.95rem] leading-relaxed">
-              Bhindi Production is a creative film production house, dedicated to turning ideas into powerful visual stories. We specialize in branded content, commercials, documentaries, music videos and cinematic storytelling.
+              Bhindi Production is an Indian creative film production house dedicated to turning bold ideas into powerful visual stories. Based out of Greater Noida & Mumbai, we specialize in high-conversion TVCs, OTT series, Bollywood music videos, brand films, and Pan-India line production.
             </p>
 
             {/* Know More Button */}

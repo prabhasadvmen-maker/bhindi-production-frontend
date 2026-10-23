@@ -153,8 +153,8 @@ export const MusicVideos = () => {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden border border-gray-200 shadow-xl aspect-[16/10] bg-black group">
                 <video
-                  src="/video_fashion_capsule.mp4"
-                  poster="/studio_lighting.jpg"
+                  src="/From Klickpin.com- 13 Unique wedding hair ideas that make everyday moments look more intentional memorable and beautifully styled for anyone who l.mp4"
+                  poster="/img_beauty_hair.jpg"
                   className="w-full h-full object-cover"
                   controls={isPlaying}
                   autoPlay={isPlaying}

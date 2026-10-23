@@ -151,7 +151,7 @@ export const ColorGrading = () => {
               <div className="relative rounded-2xl overflow-hidden border border-gray-200 shadow-xl aspect-[16/10] bg-black group">
                 <video
                   src="/video_cinematic_story.mp4"
-                  poster="/behind_the_lens.jpg"
+                  poster="/about_monitor_onset.jpg"
                   className="w-full h-full object-cover"
                   controls={isPlaying}
                   autoPlay={isPlaying}

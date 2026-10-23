@@ -1,195 +1,195 @@
 export const SERVICES_DATA = [
   {
     id: 'film-production',
-    title: 'Film Production',
-    shortDesc: 'Feature films, short films, and indie projects with high production value.',
-    fullDesc: 'End-to-end cinematic storytelling from script development to full-scale production. We deliver festival-grade cinematography, casting, set design, and production management.',
+    title: 'Film & OTT Production',
+    shortDesc: 'Feature films, OTT series, and indie cinema with festival-grade production values.',
+    fullDesc: 'End-to-end cinematic storytelling from script development to full-scale line production across India. We deliver 8K cinema capture, Bollywood & indie casting, set construction, and complete production management.',
     icon: 'Clapperboard',
-    features: ['Script Breakdown & Casting', 'Cinema Rigging & 8K Capture', 'Sound Stage & Location Scouting', 'Line Production Across India'],
-    stats: '40+ Short & Feature Projects'
+    features: ['Script Breakdown & Casting', 'ARRI Alexa & RED V-Raptor 8K', 'Haveli & Soundstage Construction', 'Pan-India Line Production Across 18+ States'],
+    stats: '45+ Feature & OTT Projects'
   },
   {
     id: 'ad-films',
-    title: 'Ad Films & Commercials',
-    shortDesc: 'TVCs, digital ads, and high-conversion brand commercial films.',
-    fullDesc: 'Striking visual campaigns crafted to captivate audiences and elevate brand prestige across television, OTT, and social channels.',
+    title: 'Ad Films & TVCs',
+    shortDesc: 'Broadcast TVCs, digital commercials, and high-conversion brand films.',
+    fullDesc: 'Striking visual campaigns crafted to captivate Indian consumers and elevate brand prestige across television, OTT platforms, and digital media.',
     icon: 'Megaphone',
-    features: ['Concept Ideation & Storyboarding', 'High-Speed Phantom & Car Rigs', 'Color Grading for TV & Web', 'Targeted Ad Cut Variations'],
-    stats: '120+ Commercials Delivered'
+    features: ['Creative Strategy & Storyboarding', 'Celebrity & Model Direction', 'High-Speed Phantom & Motion Rigs', 'Multi-Language Dubbing (Hindi, Tamil, Telugu, etc.)'],
+    stats: '150+ TVCs Delivered'
   },
   {
     id: 'corporate-films',
-    title: 'Corporate Films',
-    shortDesc: 'Executive profiles, brand documentaries, and corporate stories.',
-    fullDesc: 'Sophisticated brand documentaries that turn corporate visions and team culture into inspiring, cinematic narratives.',
+    title: 'Corporate & Brand Films',
+    shortDesc: 'Executive leadership profiles, corporate documentaries, and brand films.',
+    fullDesc: 'Sophisticated brand documentaries that turn corporate visions, factory infrastructure, and Indian enterprise stories into inspiring, cinematic narratives.',
     icon: 'Video',
-    features: ['Leadership Interviews', 'Factory & Facility Tours', 'Investor & ESG Films', 'Multilingual Subtitling & Dubbing'],
-    stats: '85+ Enterprises Partnered'
+    features: ['Leadership & Founder Interviews', 'Industrial & Manufacturing Tours', 'Investor & ESG Films', 'Pan-India Drone & Aerial Coverage'],
+    stats: '90+ Indian Enterprises Partnered'
   },
   {
     id: 'music-videos',
-    title: 'Music Videos',
-    shortDesc: 'Creative visuals, stylized storytelling, and rhythm-driven edits.',
-    fullDesc: 'Pushing aesthetic boundaries with vibrant lighting, innovative camera moves, and seamless synchronicity with music artists.',
+    title: 'Music Videos & Choreography',
+    shortDesc: 'Chart-topping Bollywood, Punjabi, and indie music video productions.',
+    fullDesc: 'Pushing aesthetic boundaries with vibrant lighting, synchronized choreography, and cinema tracking shots filmed at Punjab Film City, Mumbai studios, and exotic locations.',
     icon: 'Music',
-    features: ['Art Direction & Glamour', 'Choreography & Motion Control', 'VFX & Surreal Post Treatments', 'Global Music Label Delivery'],
-    stats: '60+ Trending Tracks Shot'
+    features: ['Costume & Glamour Art Direction', 'Choreography & Multi-Dancer Shoots', 'Track Synchronization & VFX', 'Top Record Label & OTT Delivery'],
+    stats: '70+ Music Videos Produced'
   },
   {
     id: 'events-live',
-    title: 'Events & Live Production',
-    shortDesc: 'Multi-cam setups, live streaming, and high-energy aftermovies.',
-    fullDesc: 'Capturing the adrenaline of music festivals, corporate summits, and cultural shows with multi-camera live switching and ultra-cinematic recaps.',
+    title: 'Live Concerts & Events',
+    shortDesc: 'Multi-cam concert setups, festival streaming, and aftermovies.',
+    fullDesc: 'Capturing the adrenaline of music festivals, unplugged acoustic concerts, and major cultural celebrations with multi-camera live switching and ultra-cinematic recaps.',
     icon: 'Camera',
-    features: ['Multi-Cam Switcher Ops', 'Low-Latency 4K Streaming', 'Fast-Turnaround Highlight Reels', 'Crane & Drone Coverage'],
-    stats: '150+ Live Productions'
+    features: ['Multi-Cam Switcher Ops', 'Live 4K Broadcast & Streaming', 'Fast-Turnaround Highlight Reels', 'Jib, Crane & Ronin 2 Ops'],
+    stats: '160+ Live Productions'
   },
   {
     id: 'post-production',
-    title: 'Post-Production & Creative',
-    shortDesc: 'Color grading, CGI/VFX, sound design, and master finishing.',
-    fullDesc: 'State-of-the-art DaVinci Resolve color suites, Dolby Atmos sound mixing, and creative editorial to give every frame pristine finesse.',
+    title: 'Post-Production & DaVinci DI',
+    shortDesc: 'HDR color grading, VFX, Dolby Atmos mixing, and theatrical DCP mastering.',
+    fullDesc: 'State-of-the-art DaVinci Resolve color suites, Dolby Atmos sound design, and master finishing calibrated to DCI theatrical and OTT delivery standards (Netflix, Prime, JioCinema).',
     icon: 'MonitorPlay',
-    features: ['DaVinci HDR Color Grading', 'Dolby Atmos Sound Design', 'CGI, 3D & Clean-ups', 'DCP & Broadcast Mastering'],
-    stats: '500+ Hours Mastered'
+    features: ['DaVinci Resolve HDR Color Suite', 'Dolby Atmos Surround Design', 'CGI, Clean-ups & Titles', 'Theatrical DCP & Broadcast Masters'],
+    stats: '600+ Hours Mastered'
   }
 ];
 
 export const WORK_PROJECTS = [
   {
     id: 101,
-    title: 'Neon Studio & Couple Shoot',
-    client: 'Verve Media & Couture',
+    title: 'Husn Tera Tauba Tauba - Punjabi Music Video',
+    client: 'Desi Melodies & Punjab Film City',
     category: 'Commercials',
-    image: '/the_journey.jpg',
-    videoUrl: '/video_journey.mp4',
+    image: '/img_beauty_hair.jpg',
+    videoUrl: '/From Klickpin.com- 13 Unique wedding hair ideas that make everyday moments look more intentional memorable and beautifully styled for anyone who l.mp4',
     aspect: '16:9 DCI',
-    duration: '01:30',
+    duration: '03:15',
     year: '2025',
-    description: 'Atmospheric neon studio cinematography and flash photography capturing an Indian couple in bespoke bridal & evening attire.'
+    description: 'High-voltage Punjabi music video filmed on multi-camera tracking dolly at Punjab Film City, featuring energetic choreography, vibrant studio staging, and color-graded finishing.'
   },
   {
     id: 102,
-    title: 'Bollywood Chroma & Dance Shoot',
-    client: 'Sangeet Visual Productions',
+    title: 'Noor-E-Rivaayat - Festive Ethnic Couture',
+    client: 'Ishnoor & Royal Heritage Collective',
     category: 'Commercials',
-    image: '/commercial_car.jpg',
-    videoUrl: '/video_commercial.mp4',
+    image: '/From Klickpin.com- Steal these fresh pet-friendly home tips that turn ordinary ideas into scroll-stopping inspiration for a stylish result that st.jpg',
+    videoUrl: '/From Klickpin.com- From beginner to obsessed Pin these budget-friendly smoothie bowl ideas that bring style function and personality together with.mp4',
     aspect: '16:9 Anamorphic',
-    duration: '01:45',
+    duration: '02:00',
     year: '2025',
-    description: 'High-energy chroma green screen dance sequence with lead dancers, live water misting, and precision studio camera rigging.'
+    description: 'Sumptuous Indian festive campaign capturing handcrafted silk sherwanis, royal kurtas, and pastel bridal lehengas with fluid gimbal motion on studio cyclorama.'
   },
   {
     id: 103,
-    title: 'Bridal & Avant-Garde Beauty Art',
-    client: 'Lakmé Fashion & Beauty Arts',
+    title: 'Kala Teeka - Hindi OTT Period Drama',
+    client: 'JioCinema & Zee5 Originals',
     category: 'Film Production',
-    image: '/behind_the_lens.jpg',
-    videoUrl: '/video_behind_the_lens.mp4',
+    image: '/pinterestyalia_ssspin.io_1792747351.jpg',
+    videoUrl: '/From Klickpin.com- 41728734041110747-pin-id-41728734041110747.mp4',
     aspect: '16:9 Cinematic',
-    duration: '02:15',
+    duration: '02:45',
     year: '2025',
-    description: 'Extreme macro cinema cinematography capturing intricate brushwork, vibrant pigments, and high-fashion editorial makeup on set.'
+    description: 'Emotionally charged narrative drama set in traditional Indian haveli architecture with cinematic dolly tracking, period art direction, and 8K sensor capture.'
   },
   {
     id: 104,
-    title: 'Floral Couture Runway & Shoot',
-    client: 'Sabyasachi Heritage Collective',
-    category: 'Film Production',
-    image: '/life_in_frames.jpg',
-    videoUrl: '/video_life_in_frames.mp4',
+    title: 'Avendonr Royal Solitaire - Bridal Diamond TVC',
+    client: 'Avendonr Luxury Jewels',
+    category: 'Commercials',
+    image: '/From Klickpin.com- Try this guide to elegant hair care ideas that look high-end but stay practical with practical inspiration you can use right aw.jpg',
+    videoUrl: '/From Klickpin.com- Need fresh inspiration Recreate these smart boho corner ideas that help you get the look without the stress that balance trend.mp4',
     aspect: '16:9 DCI',
-    duration: '02:40',
+    duration: '01:30',
     year: '2025',
-    description: 'Outdoor fashion runway tracking shot capturing floral embroidered couture gowns, fluid movement, and natural sunlight.'
+    description: 'Gleaming macro cinematography showcasing pure diamond and emerald bridal jewellery with specialized parabolic beauty lighting and royal styling.'
   },
   {
     id: 105,
-    title: 'Urban Streetwear & Sneaker TVC',
-    client: 'Puma Originals & Hypebeast',
+    title: 'Melbi Smart Living - National Consumer Brand TVC',
+    client: 'Melbi India Consumer Goods',
     category: 'Commercials',
-    image: '/studio_lighting.jpg',
-    videoUrl: '/video_sneaker.mp4',
+    image: '/From Klickpin.com- Dreamy street market scenes with charm and useful ideas on a budget with beautiful world vibes-pin-id-924926842228386635.jpg',
+    videoUrl: '/From Klickpin.com- 95 Clever Digital Product Ideas-pin-id-622481979781910754.mp4',
     aspect: '16:9 DCI',
     duration: '01:15',
     year: '2025',
-    description: 'Dynamic urban youth commercial with rhythmic fast-cut editing, vibrant sneaker styling, and street energy.'
+    description: 'Multi-location national consumer brand commercial filmed across Delhi-NCR gardens and designer living rooms for television broadcast and digital campaigns.'
   },
   {
     id: 106,
-    title: 'Luxury Villa & Architectural Living',
-    client: 'Lodha Luxury Estates',
-    category: 'Corporate Films',
-    image: '/clapperboard.jpg',
-    videoUrl: '/video_lifestyle.mp4',
+    title: 'Galiyan Ka Khel - Action Cinema Chase',
+    client: 'Indian Indie Cinema Guild',
+    category: 'Film Production',
+    image: '/a4usxhh_ssspin.io_1792747382.jpg',
+    videoUrl: '/From Klickpin.com- Try Dreamy minimalist bedroom decor that feel fresh practical and surprisingly easy to try for ideas worth saving right now-pin.mp4',
     aspect: '16:9 DCI',
-    duration: '02:20',
+    duration: '02:10',
     year: '2025',
-    description: 'Cinematic architectural walkthrough showcasing modern luxury villa interiors, natural textures, and elegant home aesthetics.'
+    description: 'High-octane outdoor street chase sequence filmed on location with dynamic backward tracking camera operation and visceral live audio capture.'
   },
   {
     id: 107,
-    title: 'National Governance & Civic Story',
-    client: 'India Public Policy Forum',
-    category: 'Corporate Films',
-    image: '/the_journey.jpg',
-    videoUrl: '/video_corporate.mp4',
+    title: 'Sur-Sangeet Unplugged - Live Acoustic Night',
+    client: 'Coke Studio Bharat & Spotify India',
+    category: 'Film Production',
+    image: '/studio_lighting.jpg',
+    videoUrl: '/karuppunaveen04_ssspin.io_1792747733.mp4',
     aspect: '16:9 DCI',
-    duration: '03:00',
+    duration: '04:20',
     year: '2025',
-    description: 'Thought-leadership brand documentary focusing on community empowerment, civic leadership, and democratic dialogue.'
+    description: 'Soulful live acoustic concert capturing popular Hindi melodies with acoustic guitars, cajon rhythm, and a chorus crowd in an intimate amphitheater.'
   },
   {
     id: 108,
-    title: 'Heritage Crafts & Artisan Guild',
-    client: 'Kala Raksha Artisans',
-    category: 'Film Production',
-    image: '/behind_the_lens.jpg',
+    title: 'Viraasat-E-Rajasthan - Cultural Heritage Film',
+    client: 'Rajasthan Tourism & Incredible India',
+    category: 'Corporate Films',
+    image: '/From Klickpin.com- Need fresh inspiration Build these smart back-to-school ideas that help you get the look without the stress with realistic idea.jpg',
     videoUrl: '/video_documentary.mp4',
     aspect: '16:9 DCI',
-    duration: '02:30',
+    duration: '03:30',
     year: '2025',
-    description: 'Intimate cultural documentary celebrating traditional Indian textile arts, handloom weaving, and generational artistry.'
+    description: 'Rich cinematic journey through royal Rajasthani courtyards, hand-painted peacock frescos, and centuries-old architectural grandeur with smooth dolly moves.'
   },
   {
     id: 109,
-    title: 'Modern Home & Pet-Friendly Living',
-    client: 'Paws & Haven Living',
+    title: 'Dulhan: The Heritage Bridal Journey',
+    client: 'Sabyasachi & Raw Mango Bridal Collective',
     category: 'Commercials',
-    image: '/commercial_car.jpg',
+    image: '/From Klickpin.com- Christmas Craft Ideas for a More Beautiful Life 91631-pin-id-898116350711242613.jpg',
     videoUrl: '/video_homeliving.mp4',
     aspect: '16:9 DCI',
-    duration: '01:40',
+    duration: '01:45',
     year: '2025',
-    description: 'Warm, heartwarming lifestyle commercial capturing family, cozy interiors, and joyful pet companionship in modern apartments.'
+    description: 'Sunlit outdoor royal garden bridal campaign filmed under large silk butterfly diffusers with high-speed cinematic lenses capturing intricate zardozi embroidery.'
   }
 ];
 
 export const COMPANY_STATS = [
-  { value: '5+', label: 'Years', desc: 'Crafting unforgettable stories' },
-  { value: '200+', label: 'Projects', desc: 'Films, TVCs and digital campaigns' },
-  { value: '50+', label: 'Happy Clients', desc: 'National & international brands' },
-  { value: 'All India', label: 'Production Support', desc: 'Filming capabilities nationwide' }
+  { value: '7+', label: 'Years', desc: 'Crafting unforgettable Indian stories' },
+  { value: '250+', label: 'Projects', desc: 'Films, TVCs, music videos & OTT shows' },
+  { value: '80+', label: 'Brand Clients', desc: 'Leading Indian & global enterprises' },
+  { value: 'Pan-India', label: 'Production Units', desc: 'Shooting capabilities across all 28 states' }
 ];
 
 export const TEAM_MEMBERS = [
   {
     name: 'Kabir Bhindi',
     role: 'Founder & Executive Director',
-    bio: 'Visionary filmmaker with over 12 years in advertising cinema and feature production.',
+    bio: 'Visionary filmmaker with over 14 years in Indian cinema, advertising films, and large-scale Bollywood & OTT production.',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80'
   },
   {
     name: 'Aanya Sharma',
     role: 'Head of Cinematography',
-    bio: 'Specialist in anamorphic lighting, aerial capture, and emotional visual depth.',
+    bio: 'Specialist in ARRI Alexa 35, anamorphic lighting, aerial drone cinematography, and Indian heritage visual depth.',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80'
   },
   {
     name: 'Rohan Verma',
-    role: 'Lead Post-Production & Colorist',
-    bio: 'Master of DaVinci color grading and immersive sound design with international acclaim.',
+    role: 'Lead Post-Production & Senior Colorist',
+    bio: 'Master of DaVinci Resolve HDR color grading and Dolby Atmos sound design with credits on leading Indian theatrical & OTT releases.',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80'
   }
 ];

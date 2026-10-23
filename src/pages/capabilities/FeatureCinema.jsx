@@ -48,7 +48,7 @@ export const FeatureCinema = () => {
       status: 'Festival Circuit & Theatrical Release',
       awards: 'Official Selection - MAMI 2025, Busan Asian Film Fund',
       synopsis: 'A lyrical, visually transcendent journey through the hidden valleys of Meghalaya, tracing three generations bound by forgotten folklore.',
-      image: '/hero-bg.jpg',
+      image: '/pinterestyalia_ssspin.io_1792747351.jpg',
       specs: 'Shot on ARRI Alexa Mini LF + Cooke Anamorphic /i'
     },
     {
@@ -57,7 +57,7 @@ export const FeatureCinema = () => {
       status: 'Streaming Original',
       awards: 'Best Cinematography - Indian Independent Film Awards',
       synopsis: 'High-contrast nocturnal cinema weaving through the claustrophobic alleys of Chandni Chowk as a retired photojournalist unearths an ancient secret.',
-      image: '/life_in_frames.jpg',
+      image: '/a4usxhh_ssspin.io_1792747382.jpg',
       specs: 'Shot on RED V-Raptor 8K VV + Master Primes'
     },
     {
@@ -66,7 +66,7 @@ export const FeatureCinema = () => {
       status: 'Post-Production',
       awards: 'Selected for National Film Co-Production Market',
       synopsis: 'Four interconnected stories unfolding across Mumbai, Kochi, Varanasi, and Kolkata during the first 48 hours of the Southwest Monsoon.',
-      image: '/the_journey.jpg',
+      image: '/From Klickpin.com- Steal these fresh pet-friendly home tips that turn ordinary ideas into scroll-stopping inspiration for a stylish result that st.jpg',
       specs: 'Mastered in Dolby Vision HDR & Dolby Atmos'
     }
   ];
@@ -159,8 +159,8 @@ export const FeatureCinema = () => {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden border border-gray-200 shadow-xl aspect-[16/10] bg-black group">
                 <video
-                  src="/video_cinematic_story.mp4"
-                  poster="/hero-bg.jpg"
+                  src="/From Klickpin.com- 41728734041110747-pin-id-41728734041110747.mp4"
+                  poster="/pinterestyalia_ssspin.io_1792747351.jpg"
                   className="w-full h-full object-cover"
                   controls={isPlaying}
                   autoPlay={isPlaying}

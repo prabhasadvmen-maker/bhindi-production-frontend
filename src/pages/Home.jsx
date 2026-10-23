@@ -19,16 +19,16 @@ export const Home = () => {
       {/* 1. Hero Section */}
       <HeroSection 
         onOpenShowreel={() => setSelectedVideo({
-          title: 'Bhindi Production Official Showreel',
-          url: '/video_showreel.mp4'
+          title: 'Bhindi Production - Official 3D Cinema Showreel',
+          url: '/WhatsApp Video 2026-10-20 at 12.14.00 PM.mp4'
         })}
       />
 
       {/* 2. Services Bar Section (Crafting Stories That Matter) */}
       <ServicesBar 
         onOpenVideo={() => setSelectedVideo({
-          title: 'Bhindi Production - Behind The Scenes',
-          url: '/video_about.mp4'
+          title: 'Bhindi Production - Bollywood & OTT Set In Action',
+          url: '/From Klickpin.com- 41728734041110747-pin-id-41728734041110747.mp4'
         })}
       />
 

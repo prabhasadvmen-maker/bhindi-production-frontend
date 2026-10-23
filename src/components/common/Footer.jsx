@@ -146,20 +146,24 @@ export const Footer = () => {
                 <Link to="/contact" className="flex items-start gap-2.5 hover:text-black transition-colors group">
                   <MapPin className="w-4 h-4 text-[#556f2d] shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
                   <span>
-                    Studio 4B, Film City Road, Goregaon (East), Mumbai 400065
+                    T-4B-506, NX One Plot no.17, Techzone-4, Greater Noida West, GAUTAM BUDDHA NAGAR, Pin 201308
                   </span>
                 </Link>
                 <div className="flex items-center gap-2.5">
                   <Phone className="w-4 h-4 text-[#556f2d] shrink-0" />
-                  <a href="tel:+919876543210" className="hover:underline">+91 98765 43210</a>
+                  <a href="tel:+919876543210" className="hover:underline">+91 9289377759</a>
+                </div>
+                <div className="flex items-center gap-2.5">
+                  <Phone className="w-4 h-4 text-[#556f2d] shrink-0" />
+                  <a href="tel:+919876543210" className="hover:underline">+91 9289377758</a>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Mail className="w-4 h-4 text-[#556f2d] shrink-0" />
-                  <a href="mailto:hello@bhindiproduction.com" className="hover:underline">hello@bhindiproduction.com</a>
+                  <a href="mailto:info@bhindiproduction.com" className="hover:underline">info@bhindiproduction.com</a>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Clock className="w-4 h-4 text-[#556f2d] shrink-0" />
-                  <span>Mon – Sat: 9:30 AM – 7:30 PM IST</span>
+                  <span>Mon – Sat: 9:30 AM – 7:30 PM</span>
                 </div>
               </div>
             </div>

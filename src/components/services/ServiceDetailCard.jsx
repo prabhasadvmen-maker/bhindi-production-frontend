@@ -52,12 +52,12 @@ export const ServiceDetailCard = ({ service, index }) => {
         <div className="lg:col-span-5 relative rounded-2xl overflow-hidden aspect-[4/3] bg-[#f0f4ec] border border-[#556f2d]/20 shadow-md">
           <img
             src={
-              index === 0 ? '/hero-bg.jpg' :
-              index === 1 ? '/behind_the_lens.jpg' :
-              index === 2 ? '/studio_lighting.jpg' :
-              index === 3 ? '/clapperboard.jpg' :
-              index === 4 ? 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80' :
-              'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80'
+              index === 0 ? '/pinterestyalia_ssspin.io_1792747351.jpg' :
+              index === 1 ? '/From Klickpin.com- Try this guide to elegant hair care ideas that look high-end but stay practical with practical inspiration you can use right aw.jpg' :
+              index === 2 ? '/From Klickpin.com- Dreamy street market scenes with charm and useful ideas on a budget with beautiful world vibes-pin-id-924926842228386635.jpg' :
+              index === 3 ? '/img_beauty_hair.jpg' :
+              index === 4 ? '/studio_lighting.jpg' :
+              '/about_monitor_onset.jpg'
             }
             alt={service.title}
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"

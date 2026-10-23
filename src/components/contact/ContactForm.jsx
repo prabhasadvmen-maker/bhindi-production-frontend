@@ -86,7 +86,7 @@ export const ContactForm = () => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            placeholder="+91 98765 43210"
+            placeholder="+91 "
             className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-300 focus:border-[#556f2d] focus:bg-white text-gray-800 text-sm focus:outline-none transition-colors shadow-sm"
           />
         </div>

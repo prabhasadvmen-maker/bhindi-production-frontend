@@ -12,27 +12,27 @@ export const LatestWorkSection = ({ onSelectProject }) => {
   const projects = [
     {
       id: 101,
-      category: 'Studio & Fashion',
-      title: 'Neon Studio & Couple Shoot',
-      videoUrl: '/video_journey.mp4',
+      category: 'Music Video & Dance',
+      title: 'Husn Tera Tauba Tauba - Punjab Film City',
+      videoUrl: '/From Klickpin.com- 13 Unique wedding hair ideas that make everyday moments look more intentional memorable and beautifully styled for anyone who l.mp4',
     },
     {
       id: 102,
-      category: 'Commercial & VFX',
-      title: 'Bollywood Chroma & Dance Shoot',
-      videoUrl: '/video_commercial.mp4',
+      category: 'Royal Ethnic Campaign',
+      title: 'Noor-E-Rivaayat Festive Silk Couture',
+      videoUrl: '/From Klickpin.com- From beginner to obsessed Pin these budget-friendly smoothie bowl ideas that bring style function and personality together with.mp4',
     },
     {
       id: 103,
-      category: 'Editorial & Beauty',
-      title: 'Bridal & Beauty Artistry',
-      videoUrl: '/video_behind_the_lens.mp4',
+      category: 'Hindi OTT Period Drama',
+      title: 'Kala Teeka - Haveli Dialogue & Dolly Shoot',
+      videoUrl: '/From Klickpin.com- 41728734041110747-pin-id-41728734041110747.mp4',
     },
     {
       id: 104,
-      category: 'Haute Couture & Film',
-      title: 'Floral Couture Runway & Shoot',
-      videoUrl: '/video_life_in_frames.mp4',
+      category: 'National Brand TVC',
+      title: 'Melbi Smart Living - Consumer TV Commercial',
+      videoUrl: '/From Klickpin.com- 95 Clever Digital Product Ideas-pin-id-622481979781910754.mp4',
     },
   ];
 

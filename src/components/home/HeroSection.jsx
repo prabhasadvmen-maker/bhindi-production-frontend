@@ -1,23 +1,80 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Play } from 'lucide-react';
 
+const HERO_IMAGES = [
+  {
+    url: '/images.jpg',
+    alt: 'Film Production Set Silhouettes and Lighting',
+    position: 'center 60%',
+  },
+  {
+    url: '/images (1).jpg',
+    alt: 'Cinematographer and Cameras on Film Set',
+    position: 'center 38%',
+  },
+  {
+    url: '/images (2).jpg',
+    alt: 'ARRI Cinema Camera on Soundstage',
+    position: 'center 45%',
+  },
+  {
+    url: '/about_monitor_onset.jpg',
+    alt: 'ARRI Cinema Camera Live Monitor On-Set',
+    position: 'center 32%',
+  },
+];
+
 export const HeroSection = ({ onOpenShowreel }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % HERO_IMAGES.length);
+    }, 4500);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="relative min-h-[85vh] sm:min-h-[90vh] lg:min-h-[95vh] flex items-center bg-[#090b0d] overflow-hidden select-none">
       
-      {/* 1. Cinematic Background Image - Positioned to capture camera and sunset glow on mobile */}
-      <div 
-        className="absolute inset-0 bg-cover bg-[62%_25%] sm:bg-[center_35%] transition-all duration-700"
-        style={{
-          backgroundImage: `url('/hero-bg.jpg')`,
-        }}
-      />
+      {/* 1. Cinematic Rotating Background Carousel */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {HERO_IMAGES.map((img, index) => {
+          const isActive = index === currentImageIndex;
+          return (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                isActive ? 'opacity-100 z-0' : 'opacity-0 -z-10'
+              }`}
+            >
+              <img
+                src={img.url}
+                alt={img.alt}
+                loading="eager"
+                className={`w-full h-full object-cover transition-transform duration-[6000ms] ease-out ${
+                  isActive ? 'scale-105' : 'scale-100'
+                }`}
+                style={{
+                  objectPosition: img.position,
+                  imageRendering: '-webkit-optimize-contrast',
+                }}
+              />
+            </div>
+          );
+        })}
+      </div>
 
-      {/* 2. Atmospheric Gradient Overlays */}
-      {/* On mobile: lighter vertical gradient so mountains, sunset, and camera are vivid and clearly visible */}
-      {/* On desktop: horizontal cinematic vignette for clear left-aligned text legibility */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/25 to-black/80 sm:bg-gradient-to-r sm:from-black/90 sm:via-black/55 sm:to-black/30 lg:to-transparent pointer-events-none" />
-      <div className="hidden sm:block absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/40 pointer-events-none" />
+      {/* 2. Atmospheric Gradient Overlays: Clear background on center/right, scrim ONLY on the left behind text */}
+      {/* On desktop: Scrim only covers the left ~52% for text readability; center & right are 100% clear and vivid */}
+      <div className="hidden sm:block absolute inset-y-0 left-0 w-[55%] lg:w-[48%] bg-gradient-to-r from-black/95 via-black/70 to-transparent pointer-events-none z-10" />
+      
+      {/* On mobile: Gentle top-to-bottom scrim so text remains readable without blacking out the set */}
+      <div className="sm:hidden absolute inset-0 bg-gradient-to-b from-black/80 via-black/35 to-black/80 pointer-events-none z-10" />
+      
+      {/* Subtle top bar shade for navbar contrast */}
+      <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-black/55 to-transparent pointer-events-none z-10" />
 
       {/* 3. Bottom-Left Curved Olive Wave / Corner Accent (Desktop & Tablet only to avoid cluttering mobile) */}
       <div className="hidden sm:block absolute bottom-0 left-0 sm:w-64 md:w-72 sm:h-48 md:h-52 pointer-events-none overflow-hidden z-10 opacity-70 sm:opacity-85">
@@ -101,11 +158,11 @@ export const HeroSection = ({ onOpenShowreel }) => {
             
             {/* Tagline */}
             <div className="flex items-center gap-2 sm:gap-3 text-[10px] xs:text-[11px] sm:text-xs md:text-sm tracking-[0.22em] sm:tracking-[0.3em] font-semibold text-[#d4ddc8] uppercase">
-              <span>IDEAS</span>
+              <span>MUMBAI</span>
               <span className="text-[#a4b591]">/</span>
-              <span>STORIES</span>
+              <span>DELHI NCR</span>
               <span className="text-[#a4b591]">/</span>
-              <span>IMPACT</span>
+              <span>PAN-INDIA</span>
             </div>
 
             {/* Main Headline with Scaled-Down Mobile Serif Typography */}
@@ -116,7 +173,7 @@ export const HeroSection = ({ onOpenShowreel }) => {
 
             {/* Subtitle */}
             <p className="text-[#e2e8f0] text-xs xs:text-sm sm:text-base md:text-lg font-normal max-w-[310px] xs:max-w-sm sm:max-w-lg leading-relaxed drop-shadow-sm">
-              We turn your ideas into visual stories that inspire, engage and make an impact.
+              India's premier cinema production house & creative studio. Turning bold concepts into unforgettable feature films, TVCs, music videos, and visual spectacles across India.
             </p>
 
             {/* Action Buttons Row (Side-by-side and compact on mobile) */}
@@ -150,6 +207,22 @@ export const HeroSection = ({ onOpenShowreel }) => {
                   <div className="w-1 h-1.5 xs:h-2 rounded-full bg-white animate-wheel" />
                 </div>
                 <span className="drop-shadow-sm text-[10px] xs:text-[11px] sm:text-xs">Scroll Down</span>
+              </div>
+
+              {/* Slideshow Indicators */}
+              <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/40 backdrop-blur-xs border border-white/10">
+                {HERO_IMAGES.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setCurrentImageIndex(idx)}
+                    className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
+                      currentImageIndex === idx
+                        ? 'w-6 bg-[#a3c772]'
+                        : 'w-2 bg-white/40 hover:bg-white/70'
+                    }`}
+                    aria-label={`Go to slide ${idx + 1}`}
+                  />
+                ))}
               </div>
 
               {/* Mobile-Only Social Media Links */}

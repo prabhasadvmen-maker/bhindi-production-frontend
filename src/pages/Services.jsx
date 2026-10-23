@@ -125,9 +125,9 @@ export const Services = () => {
 
               {/* Main Cinema Showcase Card (Responsive Height) */}
               <div className="relative z-10 w-full max-w-[480px] lg:max-w-[520px] h-[360px] xs:h-[420px] sm:h-[480px] lg:h-[540px] rounded-3xl overflow-hidden shadow-2xl border-2 border-white bg-[#15171d] group transform hover:scale-[1.02] transition-transform duration-500">
-                {/* Looping video from public folder */}
+                {/* Looping video from public folder - Official Bhindi Productions 3D Brand Reel */}
                 <video
-                  src="/video_showreel.mp4"
+                  src="/WhatsApp Video 2026-10-20 at 12.14.00 PM.mp4"
                   autoPlay
                   muted
                   loop

@@ -47,7 +47,7 @@ export const Documentaries = () => {
       title: 'The Seed & The Soil (24 mins)',
       impact: 'Screened at UN Food Security Summit 2025',
       desc: 'An evocative documentary tracking 12,000 smallholder farmers in Maharashtra transitioning to climate-resilient organic agriculture.',
-      image: '/the_journey.jpg',
+      image: '/From Klickpin.com- Need fresh inspiration Build these smart back-to-school ideas that help you get the look without the stress with realistic idea.jpg',
       tags: ['Agriculture', 'ESG Film', 'Drone Aerials']
     },
     {
@@ -55,7 +55,7 @@ export const Documentaries = () => {
       title: 'Harnessing The Thar (18 mins)',
       impact: 'Winner: Best Industrial Film - Mumbai Docs Fest',
       desc: 'Documenting the construction of a 2.4-gigawatt solar-wind hybrid corridor across the Thar Desert, braving 50°C summer heatwaves.',
-      image: '/hero-bg.jpg',
+      image: '/From Klickpin.com- Dreamy street market scenes with charm and useful ideas on a budget with beautiful world vibes-pin-id-924926842228386635.jpg',
       tags: ['Renewable Energy', 'Infrastructure', 'Cinematic B-Roll']
     },
     {
@@ -63,7 +63,7 @@ export const Documentaries = () => {
       title: 'Threads of Gold (15 mins)',
       impact: 'Archived at National Craft Council & Doordarshan',
       desc: 'A sensitive historical retrospective honoring fifth-generation master weavers preserving ancient zari silk weaving techniques against modern fast fashion.',
-      image: '/life_in_frames.jpg',
+      image: '/From Klickpin.com- Salty seaside quotes for people who love beauty with timeless style to brighten your feed-pin-id-991214199269377065.jpg',
       tags: ['Heritage & Craft', 'Archival 4K', 'Cultural Preservation']
     }
   ];
@@ -152,7 +152,7 @@ export const Documentaries = () => {
               <div className="relative rounded-2xl overflow-hidden border border-gray-200 shadow-xl aspect-[16/10] bg-black group">
                 <video
                   src="/video_documentary.mp4"
-                  poster="/life_in_frames.jpg"
+                  poster="/From Klickpin.com- Need fresh inspiration Build these smart back-to-school ideas that help you get the look without the stress with realistic idea.jpg"
                   className="w-full h-full object-cover"
                   controls={isPlaying}
                   autoPlay={isPlaying}
