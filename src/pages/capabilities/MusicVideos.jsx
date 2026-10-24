@@ -55,7 +55,7 @@ export const MusicVideos = () => {
       track: 'Gully Kings (Urban Hip-Hop)',
       views: '24M+ Streams & Viral Reel Audio',
       desc: 'High-octane nocturnal choreography filmed inside an abandoned Mumbai textile mill with programmable Astera pixel tubes.',
-      image: '/behind_the_lens.jpg',
+      image: '/music_hiphop_gully.jpg',
       tags: ['Hip-Hop', 'RED 8K High-Speed', 'Astera Pixel FX']
     },
     {
@@ -63,7 +63,7 @@ export const MusicVideos = () => {
       track: 'Rani Haar (Electro-Sufi)',
       views: 'Featured on Spotify India Editorial',
       desc: 'Sumptuous heritage palace visuals combining traditional kathak choreography with modern electronic soundscapes.',
-      image: '/life_in_frames.jpg',
+      image: '/music_electrosufi_rani.jpg',
       tags: ['Fusion Classical', 'Panther Jib', 'DaVinci Rich Color']
     }
   ];
